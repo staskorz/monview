@@ -1,7 +1,10 @@
 module.exports = {
 	env: {
-		es6: true,
 		browser: true,
+	},
+
+	parserOptions: {
+		sourceType: 'module',
 	},
 
 	extends: [
@@ -9,4 +12,12 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:prettier/recommended',
 	],
+
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: ['.js', '.jsx'],
+			},
+		},
+	},
 }

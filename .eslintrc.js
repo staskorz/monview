@@ -7,7 +7,6 @@ module.exports = {
 
 	parserOptions: {
 		ecmaVersion: 2017,
-		sourceType: 'module',
 	},
 
 	extends: [
@@ -17,11 +16,7 @@ module.exports = {
 		'plugin:import/warnings',
 	],
 
-	settings: {
-		'import/resolver': {
-			node: {
-				extensions: ['.js', '.jsx'],
-			},
-		},
+	rules: {
+		'import/no-unresolved': [2, { commonjs: true, amd: true }],
 	},
 }
