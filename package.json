@@ -5,8 +5,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev:server": "./packages/server/node_modules/.bin/nodemon ./packages/server/src/index.js",
-		"dev:client": "./packages/client/node_modules/.bin/webpack-dev-server --config ./packages/client/webpack.config.js --mode development",
+		"dev:server":
+			"./packages/server/node_modules/.bin/nodemon ./packages/server/src/index.js",
+		"dev:client":
+			"./packages/client/node_modules/.bin/webpack-dev-server --config ./packages/client/webpack.config.js --mode development",
+		"lint": "eslint --ext js,jsx . || true",
 		"test": "jest",
 		"test:watch": "jest --watch"
 	},
@@ -23,7 +26,5 @@
 		"lerna": "^2.9.0",
 		"prettier": "^1.11.1"
 	},
-	"workspaces": [
-		"packages/*"
-	]
+	"workspaces": ["packages/*"]
 }

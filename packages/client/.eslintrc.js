@@ -1,6 +1,9 @@
+/* global module:false */
+
 module.exports = {
 	env: {
 		browser: true,
+		node: false,
 	},
 
 	parserOptions: {
