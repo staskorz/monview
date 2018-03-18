@@ -10,5 +10,18 @@ module.exports = {
 		sourceType: 'module',
 	},
 
-	extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+	extends: [
+		'eslint:recommended',
+		'plugin:prettier/recommended',
+		'plugin:import/errors',
+		'plugin:import/warnings',
+	],
+
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: ['.js', '.jsx'],
+			},
+		},
+	},
 }
