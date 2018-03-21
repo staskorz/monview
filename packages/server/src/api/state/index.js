@@ -1,8 +1,7 @@
-const poller = require('opsview-poller')
-
 module.exports = (req, res) => {
+	req.opsview()
+
 	res.json({
 		ok: true,
-		sum: poller(1, 5),
 	})
 }

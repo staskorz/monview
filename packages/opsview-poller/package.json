@@ -2,5 +2,8 @@
   "name": "opsview-poller",
   "version": "1.0.0",
   "main": "src/index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.1.1"
+  }
 }
