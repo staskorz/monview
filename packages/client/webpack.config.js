@@ -20,6 +20,7 @@ module.exports = {
 						query: {
 							presets: [['env', { modules: false }], 'react'],
 							plugins: ['react-hot-loader/babel'],
+							babelrc: false,
 						},
 					},
 				],
